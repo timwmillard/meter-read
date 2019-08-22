@@ -1,0 +1,88 @@
+// !$*UTF8*$!
+{
+	221A323B1721F594009F1444 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 22747BF61977B4E20005290C /* MeterRead */;
+		activeTarget = 221A32421721F594009F1444 /* MeterRead */;
+		codeSenseManager = 22747C101977B4E40005290C /* Code sense */;
+		executables = (
+			22747BF61977B4E20005290C /* MeterRead */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1233,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 427720925;
+			PBXWorkspaceStateSaveDate = 427720925;
+		};
+		sourceControlManager = 22747C0F1977B4E40005290C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	221A32421721F594009F1444 /* MeterRead */ = {
+		activeExec = 0;
+		executables = (
+			22747BF61977B4E20005290C /* MeterRead */,
+		);
+	};
+	22747BF61977B4E20005290C /* MeterRead */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = MeterRead;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	22747C0F1977B4E40005290C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	22747C101977B4E40005290C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

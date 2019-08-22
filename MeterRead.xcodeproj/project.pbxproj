@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220528D41761E74800F1ABBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220528D31761E74800F1ABBA /* MapKit.framework */; };
+		220528D61761E75100F1ABBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220528D51761E75100F1ABBA /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		220528D91761FD6D00F1ABBA /* TMXMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220528D81761FD6D00F1ABBA /* TMXMapViewController.m */; };
+		220529151764A4AA00F1ABBA /* text-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 220529141764A4AA00F1ABBA /* text-list.png */; };
+		220529181764A52300F1ABBA /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 220529171764A52300F1ABBA /* gear.png */; };
+		2205291A1764B8BE00F1ABBA /* map-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 220529191764B8BE00F1ABBA /* map-pin.png */; };
+		220529231766FD6100F1ABBA /* TMXSectionMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220529221766FD6100F1ABBA /* TMXSectionMapViewController.m */; };
+		2208F26A1775BB7E004B544A /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208F2691775BB7E004B544A /* DataController.m */; };
+		2210F8DE19488F7800636640 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2210F8DD19488F7800636640 /* Settings.bundle */; };
+		2213C57D172C042400C6B34A /* TMXSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C57C172C042400C6B34A /* TMXSettingsViewController.m */; };
+		2213C580172D5B1E00C6B34A /* TMXMeterReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C57F172D5B1E00C6B34A /* TMXMeterReadingViewController.m */; };
+		2213C583172D5B5800C6B34A /* TMXAllocBankAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C582172D5B5800C6B34A /* TMXAllocBankAccountViewController.m */; };
+		2213C586172D5BA800C6B34A /* TMXDateTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C585172D5BA800C6B34A /* TMXDateTimeViewController.m */; };
+		221822271768A4B40027F33A /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 221822261768A4B40027F33A /* file.png */; };
+		2218222C1768AC6A0027F33A /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2218222A1768AC6A0027F33A /* Settings.png */; };
+		2218222D1768AC6A0027F33A /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2218222B1768AC6A0027F33A /* Settings@2x.png */; };
+		221A32471721F594009F1444 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221A32461721F594009F1444 /* UIKit.framework */; };
+		221A32491721F594009F1444 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221A32481721F594009F1444 /* Foundation.framework */; };
+		221A324B1721F594009F1444 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221A324A1721F594009F1444 /* CoreGraphics.framework */; };
+		221A324D1721F594009F1444 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221A324C1721F594009F1444 /* CoreData.framework */; };
+		221A32531721F594009F1444 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221A32511721F594009F1444 /* InfoPlist.strings */; };
+		221A32551721F594009F1444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A32541721F594009F1444 /* main.m */; };
+		221A32591721F594009F1444 /* TMXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A32581721F594009F1444 /* TMXAppDelegate.m */; };
+		221A32681721F594009F1444 /* TMXMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A32671721F594009F1444 /* TMXMasterViewController.m */; };
+		221BC1DC175248A500003EF9 /* TMXCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BC1DB175248A500003EF9 /* TMXCommentViewController.m */; };
+		221BD62F179368C000E31688 /* ServicePoint+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BD62E179368C000E31688 /* ServicePoint+Extention.m */; };
+		221CAC7D178DA65600049B8A /* TMXImportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CAC7C178DA65600049B8A /* TMXImportOperation.m */; };
+		221CAC80178DA66C00049B8A /* TMXExportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CAC7F178DA66C00049B8A /* TMXExportOperation.m */; };
+		2231794917AE7B6300848917 /* TMXSelectABACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2231794817AE7B6300848917 /* TMXSelectABACell.m */; };
+		2231794C17AED32000848917 /* TMXMeterReadingHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2231794B17AED32000848917 /* TMXMeterReadingHistoryCell.m */; };
+		2231794F17AED94C00848917 /* mail-uncheck-icon-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 2231794E17AED94C00848917 /* mail-uncheck-icon-24.png */; };
+		2237E51E17360939000F018A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2237E51D17360939000F018A /* MessageUI.framework */; };
+		2239CBC717A6A0BA00FF7E22 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 2239CBC117A6A0BA00FF7E22 /* iTunesArtwork */; };
+		2239CBC817A6A0BA00FF7E22 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 2239CBC217A6A0BA00FF7E22 /* iTunesArtwork@2x */; };
+		22410CD417B231CC0077F8C2 /* MeterRead.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22410CD217B231CC0077F8C2 /* MeterRead.xcdatamodeld */; };
+		224A00B4179D6F5A005E63CE /* TMXMeterReadingHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224A00B3179D6F5A005E63CE /* TMXMeterReadingHistoryViewController.m */; };
+		225C47A21727ADE400163C04 /* TMXDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C47A11727ADE400163C04 /* TMXDetailsViewController.m */; };
+		2265655517A45A5B005B2C52 /* TMXReadByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2265655417A45A5A005B2C52 /* TMXReadByViewController.m */; };
+		2268AFA3194DBE0F004E105F /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268AFA2194DBE0F004E105F /* Group.m */; };
+		2268AFA6194DC12F004E105F /* TMXGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268AFA5194DC12F004E105F /* TMXGroupsViewController.m */; };
+		226CD7BA17957B10009189B8 /* TMXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226CD7B917957B10009189B8 /* TMXTabBarController.m */; };
+		22707FBF17678B9E00791777 /* TMXServicePointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22707FBE17678B9E00791777 /* TMXServicePointAnnotation.m */; };
+		229230EE192F7FAC0050AE4B /* t5.csv in Resources */ = {isa = PBXBuildFile; fileRef = 229DF125173926F100183ACA /* t5.csv */; };
+		229DF1201737BB2100183ACA /* TMXMeterReadingsFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DF11F1737BB2100183ACA /* TMXMeterReadingsFile.m */; };
+		22A0C0EA17996A1500D0C840 /* TMXImportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A0C0E917996A1500D0C840 /* TMXImportViewController.m */; };
+		22AB4B46176CA1D100295270 /* mail-check-icon-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AB4B45176CA1D100295270 /* mail-check-icon-24.png */; };
+		22AB4B4B176CC97C00295270 /* AllocationBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB4B4A176CC97C00295270 /* AllocationBankAccount.m */; };
+		22AB4B4E176CC98B00295270 /* MeterReading.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB4B4D176CC98B00295270 /* MeterReading.m */; };
+		22AB4B51176CC99B00295270 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB4B50176CC99B00295270 /* Section.m */; };
+		22AB4B54176CC9A600295270 /* ServicePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB4B53176CC9A500295270 /* ServicePoint.m */; };
+		22AB4B56176CCF2100295270 /* untick.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AB4B55176CCF2100295270 /* untick.png */; };
+		22AB4B63176DF1F400295270 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB4B61176DF1F400295270 /* CHCSVParser.m */; };
+		22AB4B64176DF1F400295270 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 22AB4B62176DF1F400295270 /* LICENSE */; };
+		22B6FB43176A2C4A006B370E /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6FB42176A2C4A006B370E /* tick.png */; };
+		22B9F56919449CD00009F858 /* TMXMeterReadingDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B9F56819449CD00009F858 /* TMXMeterReadingDetailsViewController.m */; };
+		22C8336819C089E000FE9A78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C8336619C089E000FE9A78 /* MainStoryboard.storyboard */; };
+		22C8336A19C08A5200FE9A78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C8336919C08A5200FE9A78 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		220528D31761E74800F1ABBA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		220528D51761E75100F1ABBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		220528D71761FD6D00F1ABBA /* TMXMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMapViewController.h; sourceTree = "<group>"; };
+		220528D81761FD6D00F1ABBA /* TMXMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXMapViewController.m; sourceTree = "<group>"; };
+		220529141764A4AA00F1ABBA /* text-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-list.png"; sourceTree = "<group>"; };
+		220529171764A52300F1ABBA /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		220529191764B8BE00F1ABBA /* map-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-pin.png"; sourceTree = "<group>"; };
+		220529211766FD6100F1ABBA /* TMXSectionMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXSectionMapViewController.h; sourceTree = "<group>"; };
+		220529221766FD6100F1ABBA /* TMXSectionMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXSectionMapViewController.m; sourceTree = "<group>"; };
+		2208F2681775BB7E004B544A /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		2208F2691775BB7E004B544A /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		2210F8DD19488F7800636640 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = MeterRead/Settings.bundle; sourceTree = "<group>"; };
+		2213C57B172C042300C6B34A /* TMXSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXSettingsViewController.h; sourceTree = "<group>"; };
+		2213C57C172C042400C6B34A /* TMXSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXSettingsViewController.m; sourceTree = "<group>"; };
+		2213C57E172D5B1E00C6B34A /* TMXMeterReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMeterReadingViewController.h; sourceTree = "<group>"; };
+		2213C57F172D5B1E00C6B34A /* TMXMeterReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXMeterReadingViewController.m; sourceTree = "<group>"; };
+		2213C581172D5B5800C6B34A /* TMXAllocBankAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXAllocBankAccountViewController.h; sourceTree = "<group>"; };
+		2213C582172D5B5800C6B34A /* TMXAllocBankAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXAllocBankAccountViewController.m; sourceTree = "<group>"; };
+		2213C584172D5BA800C6B34A /* TMXDateTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXDateTimeViewController.h; sourceTree = "<group>"; };
+		2213C585172D5BA800C6B34A /* TMXDateTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXDateTimeViewController.m; sourceTree = "<group>"; };
+		221822261768A4B40027F33A /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		2218222A1768AC6A0027F33A /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		2218222B1768AC6A0027F33A /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
+		221A32431721F594009F1444 /* MeterRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeterRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		221A32461721F594009F1444 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		221A32481721F594009F1444 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		221A324A1721F594009F1444 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		221A324C1721F594009F1444 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		221A32501721F594009F1444 /* MeterRead-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeterRead-Info.plist"; sourceTree = "<group>"; };
+		221A32521721F594009F1444 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		221A32541721F594009F1444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		221A32561721F594009F1444 /* MeterRead-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeterRead-Prefix.pch"; sourceTree = "<group>"; };
+		221A32571721F594009F1444 /* TMXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMXAppDelegate.h; sourceTree = "<group>"; };
+		221A32581721F594009F1444 /* TMXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TMXAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		221A32661721F594009F1444 /* TMXMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TMXMasterViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		221A32671721F594009F1444 /* TMXMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TMXMasterViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		221BC1DA175248A500003EF9 /* TMXCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXCommentViewController.h; sourceTree = "<group>"; };
+		221BC1DB175248A500003EF9 /* TMXCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXCommentViewController.m; sourceTree = "<group>"; };
+		221BD62D179368C000E31688 /* ServicePoint+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ServicePoint+Extention.h"; sourceTree = "<group>"; };
+		221BD62E179368C000E31688 /* ServicePoint+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ServicePoint+Extention.m"; sourceTree = "<group>"; };
+		221CAC7B178DA65600049B8A /* TMXImportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXImportOperation.h; sourceTree = "<group>"; };
+		221CAC7C178DA65600049B8A /* TMXImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXImportOperation.m; sourceTree = "<group>"; };
+		221CAC7E178DA66C00049B8A /* TMXExportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXExportOperation.h; sourceTree = "<group>"; };
+		221CAC7F178DA66C00049B8A /* TMXExportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXExportOperation.m; sourceTree = "<group>"; };
+		2231794717AE7B6300848917 /* TMXSelectABACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXSelectABACell.h; sourceTree = "<group>"; };
+		2231794817AE7B6300848917 /* TMXSelectABACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXSelectABACell.m; sourceTree = "<group>"; };
+		2231794A17AED32000848917 /* TMXMeterReadingHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMeterReadingHistoryCell.h; sourceTree = "<group>"; };
+		2231794B17AED32000848917 /* TMXMeterReadingHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXMeterReadingHistoryCell.m; sourceTree = "<group>"; };
+		2231794E17AED94C00848917 /* mail-uncheck-icon-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail-uncheck-icon-24.png"; sourceTree = "<group>"; };
+		2237E51D17360939000F018A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2239CBC117A6A0BA00FF7E22 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		2239CBC217A6A0BA00FF7E22 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		224A00B2179D6F59005E63CE /* TMXMeterReadingHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMeterReadingHistoryViewController.h; sourceTree = "<group>"; };
+		224A00B3179D6F5A005E63CE /* TMXMeterReadingHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXMeterReadingHistoryViewController.m; sourceTree = "<group>"; };
+		225C47A01727ADE400163C04 /* TMXDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TMXDetailsViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		225C47A11727ADE400163C04 /* TMXDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TMXDetailsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2265655317A45A5A005B2C52 /* TMXReadByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXReadByViewController.h; sourceTree = "<group>"; };
+		2265655417A45A5A005B2C52 /* TMXReadByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXReadByViewController.m; sourceTree = "<group>"; };
+		2268AFA1194DBE0F004E105F /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		2268AFA2194DBE0F004E105F /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		2268AFA4194DC12F004E105F /* TMXGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXGroupsViewController.h; sourceTree = "<group>"; };
+		2268AFA5194DC12F004E105F /* TMXGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXGroupsViewController.m; sourceTree = "<group>"; };
+		226CD7B817957B10009189B8 /* TMXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXTabBarController.h; sourceTree = "<group>"; };
+		226CD7B917957B10009189B8 /* TMXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXTabBarController.m; sourceTree = "<group>"; };
+		22707FBD17678B9E00791777 /* TMXServicePointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXServicePointAnnotation.h; sourceTree = "<group>"; };
+		22707FBE17678B9E00791777 /* TMXServicePointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXServicePointAnnotation.m; sourceTree = "<group>"; };
+		229230E7192F774A0050AE4B /* MeterRead 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MeterRead 2.xcdatamodel"; sourceTree = "<group>"; };
+		229230E8192F78590050AE4B /* MeterReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterReading.h; sourceTree = "<group>"; };
+		229DF11E1737BB2100183ACA /* TMXMeterReadingsFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMeterReadingsFile.h; sourceTree = "<group>"; };
+		229DF11F1737BB2100183ACA /* TMXMeterReadingsFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXMeterReadingsFile.m; sourceTree = "<group>"; };
+		229DF125173926F100183ACA /* t5.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t5.csv; sourceTree = "<group>"; };
+		229E455E172AD96600DAACBD /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
+		22A0C0E817996A1500D0C840 /* TMXImportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXImportViewController.h; sourceTree = "<group>"; };
+		22A0C0E917996A1500D0C840 /* TMXImportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXImportViewController.m; sourceTree = "<group>"; };
+		22AB4B45176CA1D100295270 /* mail-check-icon-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail-check-icon-24.png"; sourceTree = "<group>"; };
+		22AB4B49176CC97C00295270 /* AllocationBankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllocationBankAccount.h; sourceTree = "<group>"; };
+		22AB4B4A176CC97C00295270 /* AllocationBankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllocationBankAccount.m; sourceTree = "<group>"; };
+		22AB4B4D176CC98B00295270 /* MeterReading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterReading.m; sourceTree = "<group>"; };
+		22AB4B4F176CC99B00295270 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		22AB4B50176CC99B00295270 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		22AB4B52176CC9A500295270 /* ServicePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicePoint.h; sourceTree = "<group>"; };
+		22AB4B53176CC9A500295270 /* ServicePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicePoint.m; sourceTree = "<group>"; };
+		22AB4B55176CCF2100295270 /* untick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = untick.png; sourceTree = "<group>"; };
+		22AB4B60176DF1F400295270 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		22AB4B61176DF1F400295270 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		22AB4B62176DF1F400295270 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		22B6FB42176A2C4A006B370E /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		22B9F56719449CD00009F858 /* TMXMeterReadingDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMeterReadingDetailsViewController.h; sourceTree = "<group>"; };
+		22B9F56819449CD00009F858 /* TMXMeterReadingDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMXMeterReadingDetailsViewController.m; sourceTree = "<group>"; };
+		22C8336719C089E000FE9A78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		22C8336919C08A5200FE9A78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		221A32401721F594009F1444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220528D61761E75100F1ABBA /* CoreLocation.framework in Frameworks */,
+				220528D41761E74800F1ABBA /* MapKit.framework in Frameworks */,
+				2237E51E17360939000F018A /* MessageUI.framework in Frameworks */,
+				221A32471721F594009F1444 /* UIKit.framework in Frameworks */,
+				221A32491721F594009F1444 /* Foundation.framework in Frameworks */,
+				221A324B1721F594009F1444 /* CoreGraphics.framework in Frameworks */,
+				221A324D1721F594009F1444 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220529161764A4AF00F1ABBA /* TabBar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				221822261768A4B40027F33A /* file.png */,
+				220529191764B8BE00F1ABBA /* map-pin.png */,
+				220529171764A52300F1ABBA /* gear.png */,
+				220529141764A4AA00F1ABBA /* text-list.png */,
+				2218222A1768AC6A0027F33A /* Settings.png */,
+				2218222B1768AC6A0027F33A /* Settings@2x.png */,
+			);
+			name = "TabBar Icons";
+			sourceTree = "<group>";
+		};
+		2213C569172B21FA00C6B34A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				22AB4B55176CCF2100295270 /* untick.png */,
+				22B6FB42176A2C4A006B370E /* tick.png */,
+				22AB4B45176CA1D100295270 /* mail-check-icon-24.png */,
+				2231794E17AED94C00848917 /* mail-uncheck-icon-24.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		221A323A1721F594009F1444 = {
+			isa = PBXGroup;
+			children = (
+				2210F8DD19488F7800636640 /* Settings.bundle */,
+				221A324E1721F594009F1444 /* MeterRead */,
+				221A32451721F594009F1444 /* Frameworks */,
+				221A32441721F594009F1444 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		221A32441721F594009F1444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				221A32431721F594009F1444 /* MeterRead.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		221A32451721F594009F1444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				220528D51761E75100F1ABBA /* CoreLocation.framework */,
+				220528D31761E74800F1ABBA /* MapKit.framework */,
+				2237E51D17360939000F018A /* MessageUI.framework */,
+				221A32461721F594009F1444 /* UIKit.framework */,
+				221A32481721F594009F1444 /* Foundation.framework */,
+				221A324A1721F594009F1444 /* CoreGraphics.framework */,
+				221A324C1721F594009F1444 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		221A324E1721F594009F1444 /* MeterRead */ = {
+			isa = PBXGroup;
+			children = (
+				22C8336919C08A5200FE9A78 /* Images.xcassets */,
+				22C8336619C089E000FE9A78 /* MainStoryboard.storyboard */,
+				221A32571721F594009F1444 /* TMXAppDelegate.h */,
+				221A32581721F594009F1444 /* TMXAppDelegate.m */,
+				221BD62A179366D600E31688 /* ViewControllers */,
+				2237E5161735F198000F018A /* CoreData */,
+				221BD62B179366F300E31688 /* Operations */,
+				221BD62C1793672200E31688 /* Libraries */,
+				221A324F1721F594009F1444 /* Supporting Files */,
+			);
+			path = MeterRead;
+			sourceTree = "<group>";
+		};
+		221A324F1721F594009F1444 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				225E68F517A694C0003CFAAF /* iTunesArtwork */,
+				220529161764A4AF00F1ABBA /* TabBar Icons */,
+				2213C569172B21FA00C6B34A /* Images */,
+				229E455E172AD96600DAACBD /* data.csv */,
+				229DF125173926F100183ACA /* t5.csv */,
+				221A32501721F594009F1444 /* MeterRead-Info.plist */,
+				221A32511721F594009F1444 /* InfoPlist.strings */,
+				221A32541721F594009F1444 /* main.m */,
+				221A32561721F594009F1444 /* MeterRead-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		221BD62A179366D600E31688 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2231794D17AED38200848917 /* TableViewCells */,
+				22A0C0E817996A1500D0C840 /* TMXImportViewController.h */,
+				22A0C0E917996A1500D0C840 /* TMXImportViewController.m */,
+				226CD7B817957B10009189B8 /* TMXTabBarController.h */,
+				226CD7B917957B10009189B8 /* TMXTabBarController.m */,
+				221A32661721F594009F1444 /* TMXMasterViewController.h */,
+				221A32671721F594009F1444 /* TMXMasterViewController.m */,
+				225C47A01727ADE400163C04 /* TMXDetailsViewController.h */,
+				225C47A11727ADE400163C04 /* TMXDetailsViewController.m */,
+				22B9F56719449CD00009F858 /* TMXMeterReadingDetailsViewController.h */,
+				22B9F56819449CD00009F858 /* TMXMeterReadingDetailsViewController.m */,
+				224A00B2179D6F59005E63CE /* TMXMeterReadingHistoryViewController.h */,
+				224A00B3179D6F5A005E63CE /* TMXMeterReadingHistoryViewController.m */,
+				220528D71761FD6D00F1ABBA /* TMXMapViewController.h */,
+				220528D81761FD6D00F1ABBA /* TMXMapViewController.m */,
+				2213C581172D5B5800C6B34A /* TMXAllocBankAccountViewController.h */,
+				2213C582172D5B5800C6B34A /* TMXAllocBankAccountViewController.m */,
+				2213C57E172D5B1E00C6B34A /* TMXMeterReadingViewController.h */,
+				2213C57F172D5B1E00C6B34A /* TMXMeterReadingViewController.m */,
+				2213C584172D5BA800C6B34A /* TMXDateTimeViewController.h */,
+				2213C585172D5BA800C6B34A /* TMXDateTimeViewController.m */,
+				221BC1DA175248A500003EF9 /* TMXCommentViewController.h */,
+				221BC1DB175248A500003EF9 /* TMXCommentViewController.m */,
+				220529211766FD6100F1ABBA /* TMXSectionMapViewController.h */,
+				220529221766FD6100F1ABBA /* TMXSectionMapViewController.m */,
+				2213C57B172C042300C6B34A /* TMXSettingsViewController.h */,
+				2213C57C172C042400C6B34A /* TMXSettingsViewController.m */,
+				2265655317A45A5A005B2C52 /* TMXReadByViewController.h */,
+				2265655417A45A5A005B2C52 /* TMXReadByViewController.m */,
+				22707FBD17678B9E00791777 /* TMXServicePointAnnotation.h */,
+				22707FBE17678B9E00791777 /* TMXServicePointAnnotation.m */,
+				2268AFA4194DC12F004E105F /* TMXGroupsViewController.h */,
+				2268AFA5194DC12F004E105F /* TMXGroupsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		221BD62B179366F300E31688 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				229DF11E1737BB2100183ACA /* TMXMeterReadingsFile.h */,
+				229DF11F1737BB2100183ACA /* TMXMeterReadingsFile.m */,
+				221CAC7B178DA65600049B8A /* TMXImportOperation.h */,
+				221CAC7C178DA65600049B8A /* TMXImportOperation.m */,
+				221CAC7E178DA66C00049B8A /* TMXExportOperation.h */,
+				221CAC7F178DA66C00049B8A /* TMXExportOperation.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		221BD62C1793672200E31688 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				22AB4B5F176DF1F400295270 /* CHCSVParser */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		2231794D17AED38200848917 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2231794A17AED32000848917 /* TMXMeterReadingHistoryCell.h */,
+				2231794B17AED32000848917 /* TMXMeterReadingHistoryCell.m */,
+				2231794717AE7B6300848917 /* TMXSelectABACell.h */,
+				2231794817AE7B6300848917 /* TMXSelectABACell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		2237E5161735F198000F018A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				22AB4B52176CC9A500295270 /* ServicePoint.h */,
+				22AB4B53176CC9A500295270 /* ServicePoint.m */,
+				22AB4B4F176CC99B00295270 /* Section.h */,
+				22AB4B50176CC99B00295270 /* Section.m */,
+				229230E8192F78590050AE4B /* MeterReading.h */,
+				22AB4B4D176CC98B00295270 /* MeterReading.m */,
+				22AB4B49176CC97C00295270 /* AllocationBankAccount.h */,
+				22AB4B4A176CC97C00295270 /* AllocationBankAccount.m */,
+				2208F2681775BB7E004B544A /* DataController.h */,
+				2208F2691775BB7E004B544A /* DataController.m */,
+				221BD62D179368C000E31688 /* ServicePoint+Extention.h */,
+				221BD62E179368C000E31688 /* ServicePoint+Extention.m */,
+				2268AFA1194DBE0F004E105F /* Group.h */,
+				2268AFA2194DBE0F004E105F /* Group.m */,
+				22410CD217B231CC0077F8C2 /* MeterRead.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		225E68F517A694C0003CFAAF /* iTunesArtwork */ = {
+			isa = PBXGroup;
+			children = (
+				2239CBC117A6A0BA00FF7E22 /* iTunesArtwork */,
+				2239CBC217A6A0BA00FF7E22 /* iTunesArtwork@2x */,
+			);
+			name = iTunesArtwork;
+			sourceTree = "<group>";
+		};
+		22AB4B5F176DF1F400295270 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				22AB4B60176DF1F400295270 /* CHCSVParser.h */,
+				22AB4B61176DF1F400295270 /* CHCSVParser.m */,
+				22AB4B62176DF1F400295270 /* LICENSE */,
+			);
+			path = CHCSVParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		221A32421721F594009F1444 /* MeterRead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221A326E1721F594009F1444 /* Build configuration list for PBXNativeTarget "MeterRead" */;
+			buildPhases = (
+				221A323F1721F594009F1444 /* Sources */,
+				221A32401721F594009F1444 /* Frameworks */,
+				221A32411721F594009F1444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeterRead;
+			productName = MeterRead;
+			productReference = 221A32431721F594009F1444 /* MeterRead.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		221A323B1721F594009F1444 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TMX;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Timix Technology";
+				TargetAttributes = {
+					221A32421721F594009F1444 = {
+						DevelopmentTeam = JS6584VHCB;
+					};
+				};
+			};
+			buildConfigurationList = 221A323E1721F594009F1444 /* Build configuration list for PBXProject "MeterRead" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 221A323A1721F594009F1444;
+			productRefGroup = 221A32441721F594009F1444 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				221A32421721F594009F1444 /* MeterRead */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		221A32411721F594009F1444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229230EE192F7FAC0050AE4B /* t5.csv in Resources */,
+				221A32531721F594009F1444 /* InfoPlist.strings in Resources */,
+				220529151764A4AA00F1ABBA /* text-list.png in Resources */,
+				220529181764A52300F1ABBA /* gear.png in Resources */,
+				2205291A1764B8BE00F1ABBA /* map-pin.png in Resources */,
+				22C8336819C089E000FE9A78 /* MainStoryboard.storyboard in Resources */,
+				221822271768A4B40027F33A /* file.png in Resources */,
+				2218222C1768AC6A0027F33A /* Settings.png in Resources */,
+				2218222D1768AC6A0027F33A /* Settings@2x.png in Resources */,
+				22C8336A19C08A5200FE9A78 /* Images.xcassets in Resources */,
+				22B6FB43176A2C4A006B370E /* tick.png in Resources */,
+				2210F8DE19488F7800636640 /* Settings.bundle in Resources */,
+				22AB4B46176CA1D100295270 /* mail-check-icon-24.png in Resources */,
+				22AB4B56176CCF2100295270 /* untick.png in Resources */,
+				22AB4B64176DF1F400295270 /* LICENSE in Resources */,
+				2239CBC717A6A0BA00FF7E22 /* iTunesArtwork in Resources */,
+				2239CBC817A6A0BA00FF7E22 /* iTunesArtwork@2x in Resources */,
+				2231794F17AED94C00848917 /* mail-uncheck-icon-24.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		221A323F1721F594009F1444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221A32551721F594009F1444 /* main.m in Sources */,
+				221A32591721F594009F1444 /* TMXAppDelegate.m in Sources */,
+				221A32681721F594009F1444 /* TMXMasterViewController.m in Sources */,
+				225C47A21727ADE400163C04 /* TMXDetailsViewController.m in Sources */,
+				2213C57D172C042400C6B34A /* TMXSettingsViewController.m in Sources */,
+				2213C580172D5B1E00C6B34A /* TMXMeterReadingViewController.m in Sources */,
+				2213C583172D5B5800C6B34A /* TMXAllocBankAccountViewController.m in Sources */,
+				2213C586172D5BA800C6B34A /* TMXDateTimeViewController.m in Sources */,
+				229DF1201737BB2100183ACA /* TMXMeterReadingsFile.m in Sources */,
+				221BC1DC175248A500003EF9 /* TMXCommentViewController.m in Sources */,
+				220528D91761FD6D00F1ABBA /* TMXMapViewController.m in Sources */,
+				220529231766FD6100F1ABBA /* TMXSectionMapViewController.m in Sources */,
+				2268AFA6194DC12F004E105F /* TMXGroupsViewController.m in Sources */,
+				22707FBF17678B9E00791777 /* TMXServicePointAnnotation.m in Sources */,
+				22AB4B4B176CC97C00295270 /* AllocationBankAccount.m in Sources */,
+				22AB4B4E176CC98B00295270 /* MeterReading.m in Sources */,
+				22AB4B51176CC99B00295270 /* Section.m in Sources */,
+				22AB4B54176CC9A600295270 /* ServicePoint.m in Sources */,
+				22AB4B63176DF1F400295270 /* CHCSVParser.m in Sources */,
+				2208F26A1775BB7E004B544A /* DataController.m in Sources */,
+				221CAC7D178DA65600049B8A /* TMXImportOperation.m in Sources */,
+				221CAC80178DA66C00049B8A /* TMXExportOperation.m in Sources */,
+				221BD62F179368C000E31688 /* ServicePoint+Extention.m in Sources */,
+				22B9F56919449CD00009F858 /* TMXMeterReadingDetailsViewController.m in Sources */,
+				226CD7BA17957B10009189B8 /* TMXTabBarController.m in Sources */,
+				22A0C0EA17996A1500D0C840 /* TMXImportViewController.m in Sources */,
+				224A00B4179D6F5A005E63CE /* TMXMeterReadingHistoryViewController.m in Sources */,
+				2265655517A45A5B005B2C52 /* TMXReadByViewController.m in Sources */,
+				2231794917AE7B6300848917 /* TMXSelectABACell.m in Sources */,
+				2268AFA3194DBE0F004E105F /* Group.m in Sources */,
+				2231794C17AED32000848917 /* TMXMeterReadingHistoryCell.m in Sources */,
+				22410CD417B231CC0077F8C2 /* MeterRead.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		221A32511721F594009F1444 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221A32521721F594009F1444 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22C8336619C089E000FE9A78 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22C8336719C089E000FE9A78 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		221A326C1721F594009F1444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		221A326D1721F594009F1444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		221A326F1721F594009F1444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeterRead/MeterRead-Prefix.pch";
+				INFOPLIST_FILE = "MeterRead/MeterRead-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		221A32701721F594009F1444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeterRead/MeterRead-Prefix.pch";
+				INFOPLIST_FILE = "MeterRead/MeterRead-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		221A323E1721F594009F1444 /* Build configuration list for PBXProject "MeterRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221A326C1721F594009F1444 /* Debug */,
+				221A326D1721F594009F1444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221A326E1721F594009F1444 /* Build configuration list for PBXNativeTarget "MeterRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221A326F1721F594009F1444 /* Debug */,
+				221A32701721F594009F1444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22410CD217B231CC0077F8C2 /* MeterRead.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				229230E7192F774A0050AE4B /* MeterRead 2.xcdatamodel */,
+			);
+			currentVersion = 229230E7192F774A0050AE4B /* MeterRead 2.xcdatamodel */;
+			path = MeterRead.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 221A323B1721F594009F1444 /* Project object */;
+}
